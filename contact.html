@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="./css/style.production.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
   <body>
     <header class="page__header">
@@ -54,63 +54,95 @@
       </nav>
     </header>
 
-<!-- form with 'about text' -->
+    <!-- form with 'about text' -->
 
-    <div class="contact-form">
+
+<main>
+
+    <div class="contact_form">
       <h1>Contact</h1>
       <h2>Anna Nazarenko</h2>
       <p>
         Wilhelmstraße 15 <br />
         10963, Berlin
       </p>
+    
 
-     <!-- just form -->
+      <!-- just form -->
 
       <form action="" method="post">
-        <label for="email">E-mail: </label>
-        <input type="email" id="email" required />
+        
+        <div class="form_item">
+          <!-- <label class="form_label" for="email">E-mail: </label> -->
+          <input
+            class="form_input"
+            type="email"
+            id="email"
+            placeholder="Email"
+            style="font-family: inherit;"
+            required
+          />
+        </div>
 
-        <br />
+        <div class="form_item">
+          <!-- <label class="form_label" for="tel">Telephone: </label> -->
+          <input
+            class="form_input"
+            type="tel"
+            id="tel"
+            placeholder="Phone number"
+            style="font-family: inherit;"
+            required
+          />
+        </div>
 
-        <label for="tel">Telephone: </label>
-        <input type="tel" id="tel" />
+        <div class="form_item">
+          <!-- <label class="form_label" for="message">Message: </label> -->
+          <textarea
+            class="form_input"
+            maxlength="240"
+            id="message"
+            placeholder="Your message"
+            rows="4"
+            required
+          ></textarea>
+        </div>
 
-        <br />
-
-        <label for="message">Message: </label>
-        <textarea maxlength="240" id="message"></textarea>
-
-        <br />
-        <button type="submit">Send message</button>
+         <div><button type="submit">Send message</button></div>
       </form>
     </div>
-
+  </main>
 
     <footer class="page__footer">
       <p>Find me on</p>
       <div class="footer__links">
-        <a href="https://github.com/nnnzrnk" target="_blank"><img
-          src="./img/github_icon.svg"
-          href="https://github.com/nnnzrnk"
-          alt="GitHub logo"
-          width="30"
-          height="30"
+        <a href="https://github.com/nnnzrnk" target="_blank"
+          ><img
+            src="./img/github_icon.svg"
+            href="https://github.com/nnnzrnk"
+            alt="GitHub logo"
+            width="30"
+            height="30"
+            
         /></a>
         <a href="https://www.instagram.com/nnnzrnko/" target="_blank">
           <img
-          src="./img/inst.svg"
-          alt="instagram logo"
-          width="30"
-          height="30"
+            src="./img/inst.svg"
+            alt="instagram logo"
+            width="30"
+            height="30"
+            
         /></a>
-        
-        <a href="https://www.linkedin.com/in/anna-nazarenko-272492283/" target="_blank"><img
-          src="./img/linkedin_logo.svg"
-          alt="Linkedin logo"
-          width="30"
-          height="30"
+        <a
+          href="https://www.linkedin.com/in/anna-nazarenko-272492283/"
+          target="_blank"
+          ><img
+            src="./img/linkedin_logo.svg"
+            alt="Linkedin logo"
+            width="30"
+            height="30"
+           
         /></a>
-        
       </div>
     </footer>
     <script src="./js/tota11y.min.js"></script>

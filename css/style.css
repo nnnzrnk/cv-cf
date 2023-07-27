@@ -16,7 +16,38 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  color: #1c3659;
+  color: var(--mainColor);
+}
+
+.contact_form {
+  text-align: center;
+}
+
+.form_item {
+  margin-top: 30px;
+}
+
+.form_input {
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  width: 30%;
+  outline: none;
+  transition: 0.2s;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+.form_input:focus {
+  border-bottom: 1px solid var(--mainColor);
+}
+
+.form_input::placeholder {
+  font-family: inherit;
+  opacity: 0.6;
+}
+
+textarea {
+  resize: vertical;
 }
 
 .page_header_logo {
@@ -102,7 +133,11 @@ td {
 
 input,
 select {
-  font-family: sustem-ui;
+  font-family: "Nonito", sans-serif;
+}
+
+.title-work {
+  text-align: center;
 }
 
 .button__center {
@@ -215,15 +250,6 @@ button:focus,
   }
 }
 
-.contact-form,
-.title-work {
-  text-align: center;
-}
-
-.contact-form input {
-  margin-bottom: 15px;
-}
-
 .table-about-me {
   margin: 0 auto;
 }
@@ -235,6 +261,10 @@ button:focus,
 footer,
 button {
   margin-top: 30px;
+}
+
+.footer__links a {
+  margin: 0 5px;
 }
 
 @media all and (max-width: 500px) {
