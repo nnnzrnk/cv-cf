@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio site</title>
+    <link rel="icon" sizes="32x32" href="./img/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.production.css" />
+  </head>
+  <body>
+    <!-- Logo and Navbar -->
+
+    <header class="page__header">
+      <img
+        class="page_header_item page_header_logo"
+        src="./img/an.logo.svg"
+        alt="Personal logo of Anna Nazarenko, a text logo in uppercase letters that consists of my name"
+      />
+      <nav class="main-navigation page_header_item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About me</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Information -->
+
+    <main class="profile">
+      <img
+        class="profile__portrait"
+        src="./img/profile__portrait.jpg"
+        alt="Personal foto of Anna Nazarenko"
+      />
+      <div class="txt-intro">
+        <h1>Hello World!</h1>
+        <p>My name is Anna Nazarenko.</p>
+        <p>I am a <span>web</span> developer from Berlin.</p>
+        <a class="check" href="#">Check out some of my code</a>
+      </div>
+    </main>
+
+    <!-- Footer with social links -->
+
+    <footer class="page__footer">
+      <p>Find me on</p>
+      <div class="footer__links">
+        <img
+          src="./img/github_icon.svg"
+          alt="GitHub logo"
+          width="30"
+          height="30"
+        />
+        <img
+          src="./img/twitter_social_icon.svg"
+          alt="Twitter logo"
+          width="30"
+          height="30"
+        />
+        <img
+          src="./img/linkedin_logo.svg"
+          alt="Linkedin logo"
+          width="30"
+          height="30"
+        />
+      </div>
+    </footer>
+    <script src="./js/tota11y.min.js"></script>
+  </body>
+</html>
+
