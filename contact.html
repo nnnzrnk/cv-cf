@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Contact</title>
-    <link rel="icon" sizes="32x32" href="./img/favicon-32x32.png" />
+    <link rel="icon" sizes="32x32" href="./img/favicon-32x32.png" >
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    >
+    <link rel="stylesheet" type="text/css" href="./css/style.css" >
   </head>
   <body>
     <header class="page__header">
@@ -24,7 +24,7 @@
         src="./img/an.logo.svg"
         alt="Personal logo of Anna Nazarenko, a text logo in uppercase letters that consists of my name"
         class="page_header_item page_header_logo"
-      />
+      >
       <nav class="main-navigation page_header_item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
@@ -56,62 +56,58 @@
 
     <!-- form with 'about text' -->
 
+    <main>
+      <div class="contact_form">
+        <h1>Contact</h1>
+        <h2>Anna Nazarenko</h2>
+        <p>
+          Wilhelmstraße 15 <br >
+          10963, Berlin
+        </p>
 
-<main>
+        <!-- just form -->
 
-    <div class="contact_form">
-      <h1>Contact</h1>
-      <h2>Anna Nazarenko</h2>
-      <p>
-        Wilhelmstraße 15 <br />
-        10963, Berlin
-      </p>
-    
+        <form action="/" method="post">
+          <div class="form_item">
+            <!-- <label class="form_label" for="email">E-mail: </label> -->
+            <input
+              class="form_input"
+              type="email"
+              id="email"
+              placeholder="Email"
+              style="font-family: inherit"
+              required
+            >
+          </div>
 
-      <!-- just form -->
+          <div class="form_item">
+            <!-- <label class="form_label" for="tel">Telephone: </label> -->
+            <input
+              class="form_input"
+              type="tel"
+              id="tel"
+              placeholder="Phone number"
+              style="font-family: inherit"
+              required
+            >
+          </div>
 
-      <form action="/" method="post">
-        
-        <div class="form_item">
-          <!-- <label class="form_label" for="email">E-mail: </label> -->
-          <input
-            class="form_input"
-            type="email"
-            id="email"
-            placeholder="Email"
-            style="font-family: inherit;"
-            required
-          />
-        </div>
+          <div class="form_item">
+            <!-- <label class="form_label" for="message">Message: </label> -->
+            <textarea
+              class="form_input"
+              maxlength="240"
+              id="message"
+              placeholder="Your message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
 
-        <div class="form_item">
-          <!-- <label class="form_label" for="tel">Telephone: </label> -->
-          <input
-            class="form_input"
-            type="tel"
-            id="tel"
-            placeholder="Phone number"
-            style="font-family: inherit;"
-            required
-          />
-        </div>
-
-        <div class="form_item">
-          <!-- <label class="form_label" for="message">Message: </label> -->
-          <textarea
-            class="form_input"
-            maxlength="240"
-            id="message"
-            placeholder="Your message"
-            rows="4"
-            required
-          ></textarea>
-        </div>
-
-         <div><button type="submit">Send message</button></div>
-      </form>
-    </div>
-  </main>
+          <div><button type="submit">Send message</button></div>
+        </form>
+      </div>
+    </main>
 
     <footer class="page__footer">
       <p>Find me on</p>
@@ -122,16 +118,10 @@
             alt="GitHub logo"
             width="30"
             height="30"
-            
-        /></a>
+        ></a>
         <a href="https://www.instagram.com/nnnzrnko/" target="_blank">
-          <img
-            src="./img/inst.svg"
-            alt="instagram logo"
-            width="30"
-            height="30"
-            
-        /></a>
+          <img src="./img/inst.svg" alt="instagram logo" width="30" height="30"
+        ></a>
         <a
           href="https://www.linkedin.com/in/anna-nazarenko-272492283/"
           target="_blank"
@@ -140,8 +130,7 @@
             alt="Linkedin logo"
             width="30"
             height="30"
-           
-        /></a>
+        ></a>
       </div>
     </footer>
     <script src="./js/tota11y.min.js"></script>
