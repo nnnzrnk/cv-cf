@@ -359,6 +359,12 @@ button:focus,
     border:none;
     color:#3d405b;
   } 
+
+  .eurban .screenshot {
+    margin-top: 1rem;
+    max-width: 500px;
+  }
+
   .my-flix{
     background: #3c6e71;
     border:none;
