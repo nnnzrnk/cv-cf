@@ -327,10 +327,11 @@ button:focus,
   .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     margin: 0 20px;
+    align-items: stretch;
   }
 
   .grid__item {
@@ -345,7 +346,7 @@ button:focus,
   }
 
   .screenshot {
-    max-width: 500px;
+    max-width: 80%;
   }
   .grid-link {
     text-decoration: none;
@@ -383,16 +384,28 @@ button:focus,
     margin-top: 2rem ;
   } 
 
-  .grid__item:last-child {
-    -ms-grid-column: 3;
-        grid-column-start: 3;
-    -ms-grid-column-span: 0;
-    grid-column-end: 3;
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    -ms-grid-row-span: 2;
-    grid-row-end: 3;
+  .chats {
+    background: #757083;
+    border:none;
+    color: #ffffff;
   }
+  
+  .chats a {
+    text-decoration: none;
+  }
+
+  .my-flix-angular {
+    background: #e8f7ee;
+    border:none;
+    color: #3c362a;
+  }
+
+  .my-flix-server {
+    background-color: #fffcf2;
+    color: #403d39;
+    border: none;
+  }
+
 }
 
 .table-about-me {
@@ -421,8 +434,8 @@ button {
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
