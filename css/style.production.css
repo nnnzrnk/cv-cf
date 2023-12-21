@@ -251,7 +251,7 @@ button:focus,
   float: left;
   width: 250px;
   margin-right: 40px;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
 .check {
@@ -348,6 +348,13 @@ button:focus,
   .screenshot {
     max-width: 80%;
   }
+
+  .screenshot:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+    background-color: #3c362a;
+  }
+
   .grid-link {
     text-decoration: none;
     font-size: large;
@@ -413,6 +420,13 @@ button:focus,
 }
 
 .txt-about-me {
+  text-align: center;
+}
+
+.about-text {
+  margin: 0 auto;
+  max-width: 60%;
+  font-size: large;
   text-align: center;
 }
 
