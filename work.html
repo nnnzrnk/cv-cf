@@ -1,127 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work</title>
+    <link rel="icon" sizes="32x32" href="./img/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.production.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work</title>
-  <link rel="icon" sizes="32x32" href="./img/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./css/style.production.css">
-</head>
+  <body>
+    <header class="page__header">
+      <img
+        src="./img/an.logo.svg"
+        alt="Personal logo of Anna Nazarenko, a text logo in uppercase letters that consists of my name"
+        class="page_header_item page_header_logo"
+      />
+      <nav class="main-navigation page_header_item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About me</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Work</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header class="page__header">
-    <img src="./img/an.logo.svg"
-      alt="Personal logo of Anna Nazarenko, a text logo in uppercase letters that consists of my name"
-      class="page_header_item page_header_logo">
-    <nav class="main-navigation page_header_item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <!-- grid -->
 
-  <!-- grid -->
-
-  <section>
-    <div class="grid">
-      <div class="grid__item eurban">
-        <h2>EUrban</h2>
-        <p>An application that allows users to find interesting events in different cities around the world. The
-          application uses the Google Calendar API to fetch upcoming events.</p>
-        <h4>Technologies:</h4>
-        <p>React.js, AWS Lambda, TDD technique, Serverless development, Google Calendar API</p>
-        <a href="https://nnnzrnk.github.io/EUrban/" target="_blank">
-          <img class="screenshot" src="img/eurban.png" alt="screenshot of the EUrban application with the link to it">
-        </a>
-
-      </div>
-      <div class="grid__item my-flix">
-        <h2>MyFlix</h2>
-        <p>An application where users can search for movies, add and remove them from their list of favorite movies.
-          They can also register, change their data or delete the account.</p>
-        <h4>Technologies:</h4>
-        <p>React.js, React Bootstrap, MongoDB, Node.js, Express</p>
-        <a href="https://myflixxx.netlify.app/" target="_blank">
-          <img class="screenshot" src="img/movies.png" alt="screenshot of the MyFlix application with the link to it">
-        </a>
-      </div>
-      <div class="grid__item pokedex">
-        <h2>Pokedex</h2>
-        <p>It is a small web application in HTML, CSS, and JavaScript that loads data from an external API and allows
-          you to view data points in detail.</p>
-        <h4>Technologies:</h4>
-        <p>HTML, CSS, JavaScript, jQuery, Bootstrap</p>
-        <a href="https://nnnzrnk.github.io/Pokedex/" target="_blank">
-          <img class="screenshot" src="img/pokedex.png"
-            alt="screenshot of the Pokedex application with the link to it">
-          </a>
-      </div>
-      <div class="grid__item chats">
-        <h2>Chats</h2>
-        <p>Is a chat application for mobile devices created using React Native. The application
-          provides users a chat interface and the ability to share images and their location</p>
+    <section>
+      <div class="grid">
+        <div class="grid__item eurban">
+          <h2>EUrban</h2>
+          <p>
+            An application that allows users to find interesting events in
+            different cities around the world. The application uses the Google
+            Calendar API to fetch upcoming events.
+          </p>
           <h4>Technologies:</h4>
-        <p>React Native, Expo, Google Firestore Database, Google Firebase authentication, Firebase Cloud Storage, Gifted Chat library</p>
-        <a href="https://github.com/nnnzrnk/chats.git" target="_blank">
-          <img width="30%" src="img/screenshotStart.jpg" alt="screenshot of the Chats application with the link to github repo">
-        </a>
+          <p>
+            React.js, AWS Lambda, TDD technique, Serverless development, Google
+            Calendar API
+          </p>
+          <video class="screenshot" autoplay loop muted playsinline>
+            <source src="videos/eurban.mp4" type="video/mp4" />
+          </video>
+          <br />
+          <div class="links">
+            <a
+            href="https://nnnzrnk.github.io/EUrban/"
+            target="_blank"
+            ><button style="color: #f4f1de; float: left; background-color: #e07a5f;  margin-bottom: 1rem;">To the app</button></a
+          >
+          <a
+            href="https://github.com/nnnzrnk/EUrban.git"
+            target="_blank"
+            ><button  style="color: #f4f1de; float: right; background-color: #e07a5f; margin-bottom: 1rem;">To the repo</button></a
+          >
+          </div>
 
-        <a href="https://github.com/nnnzrnk/chats.git" target="_blank">
-          <img width="30%" style="margin-left: 1rem;" src="img/screenshotChat.jpg" alt="screenshot of the Chats application with the link to github repo">
-        </a>
+        </div>
+        <div class="grid__item my-flix">
+          <h2>MyFlix</h2>
+          <p>
+            An application where users can search for movies, add and remove
+            them from their list of favorite movies. They can also register,
+            change their data or delete the account.
+          </p>
+          <h4>Technologies:</h4>
+          <p>React.js, React Bootstrap, MongoDB, Node.js, Express</p>
+          <video class="screenshot" autoplay loop muted playsinline>
+            <source src="videos/myFlix(React).mp4" type="video/mp4" />
+          </video>
+          <br />
+          <div class="links">
+            <a
+            href="https://myflixxx.netlify.app/"
+            target="_blank"
+            ><button style="color: #fefee3; float: left; background-color: #bc4b51;  margin-bottom: 1rem;">To the app</button></a
+          >
+          <a
+            href="https://github.com/nnnzrnk/movie_api-client.git"
+            target="_blank"
+            ><button  style="color: #fefee3; float: right; background-color: #bc4b51; margin-bottom: 1rem;">To the repo</button></a
+          >
+          </div>
+
+        </div>
+        <div class="grid__item pokedex">
+          <h2>Pokedex</h2>
+          <p>
+            It is a small web application in HTML, CSS, and JavaScript that
+            loads data from an external API and allows you to view data points
+            in detail.
+          </p>
+          <h4>Technologies:</h4>
+          <p>HTML, CSS, JavaScript, jQuery, Bootstrap</p>
+          <video class="screenshot" autoplay loop muted playsinline>
+            <source src="videos/pokedex.mp4" type="video/mp4" />
+          </video>
+          <div class="links">
+            <a
+            href="https://nnnzrnk.github.io/Pokedex/"
+            target="_blank"
+            ><button style="color: #ffff; float: left; background-color: #3564ae;  margin-bottom: 1rem;">To the app</button></a
+          >
+          <a
+            href="https://github.com/nnnzrnk/Pokedex.git"
+            target="_blank"
+            ><button  style="color: #ffff; float: right; background-color: #3564ae; margin-bottom: 1rem;">To the repo</button></a
+          >
+          </div>
+        </div>
+        <div class="grid__item chats">
+          <h2>Chats</h2>
+          <p>
+            Is a chat application for mobile devices created using React Native.
+            The application provides users a chat interface and the ability to
+            share images and their location
+          </p>
+          <h4>Technologies:</h4>
+          <p>
+            React Native, Expo, Google Firestore Database, Google Firebase
+            authentication, Firebase Cloud Storage, Gifted Chat library
+          </p>
+          <video class="screenshot-chats" autoplay loop muted playsinline>
+            <source src="videos/chats.MP4" type="video/mp4" />
+          </video>
+          <div class="links">
+            <a
+            href="https://github.com/nnnzrnk/chats.git"
+            target="_blank"
+            ><button style="color: #757083; background-color: #B9C6AE;  margin-bottom: 1rem;">To the repo</button></a
+          >
+          </div>
+        </div>
+        <div class="grid__item my-flix-angular">
+          <h2>MyFlix(Angular)</h2>
+          <p>
+            An application where users can search for movies, add and remove
+            them from their list of favorite movies. They can also register,
+            change their data or delete the account.
+          </p>
+          <h4>Technologies:</h4>
+          <p>Angular, TypeScript, TypeDoc, Angular Material</p>
+          <video class="screenshot" autoplay loop muted playsinline>
+            <source src="videos/myFlix(Angular).mp4" type="video/mp4" />
+          </video>
+          <div class="links">
+            <a
+            href="https://nnnzrnk.github.io/movie_api-Angular-client/"
+            target="_blank"
+            ><button style="color: #e8f7ee; float: left; background-color: #663f46;  margin-bottom: 1rem;">To the app</button></a
+          >
+          <a
+            href="https://github.com/nnnzrnk/movie_api-Angular-client.git"
+            target="_blank"
+            ><button  style="color: #e8f7ee; float: right; background-color: #663f46; margin-bottom: 1rem;">To the repo</button></a
+          >
+          </div>
+        </div>
+        <div class="grid__item my-flix-server">
+          <h2>MyFlix (Rest API)</h2>
+          <p>
+            It is a server-side component of a “MyFlix” web application provides
+            user an access to information about different movies, directors, and
+            genres. Users are able to sign up, update their personal
+            information, and create a list of their favorite movies
+          </p>
+          <h4>Technologies:</h4>
+          <p>Node.js, Express.js, MongoDB, Postman, Render</p>
+          <div class="links">
+            <a
+            href="https://movie-api-da5i.onrender.com/documentation.html"
+            target="_blank"
+            ><button style="color: #ffff; float: left; background-color: #005f73;  margin-bottom: 1rem;">To the docmentation</button></a
+          >
+          <a
+            href="https://github.com/nnnzrnk/movie_api.git"
+            target="_blank"
+            ><button  style="color: #ffff; float: right; background-color: #005f73; margin-bottom: 1rem;">To the app</button></a
+          >
+          </div>
+        </div>
       </div>
-      <div class="grid__item my-flix-angular">
-        <h2>MyFlix(Angular)</h2>
-        <p>An application where users can search for movies, add and remove them from their list of favorite movies.
-          They can also register, change their data or delete the account.</p>
-        <h4>Technologies:</h4>
-        <p>Angular, TypeScript, TypeDoc, Angular Material</p>
-        <a href="https://nnnzrnk.github.io/movie_api-Angular-client/" target="_blank">
-          <img  class="screenshot" src="img/my-flix-angular.png" alt="screenshot of the application" />
-        </a>
+    </section>
+
+    <footer class="page__footer">
+      <p>Find me on</p>
+      <div class="footer__links">
+        <a href="https://github.com/nnnzrnk" target="_blank"
+          ><img
+            src="./img/github_icon.svg"
+            alt="GitHub logo"
+            width="30"
+            height="30"
+        /></a>
+        <a href="https://www.instagram.com/nnnzrnko/" target="_blank">
+          <img src="./img/inst.svg" alt="instagram logo" width="30" height="30"
+        /></a>
+
+        <a
+          href="https://www.linkedin.com/in/anna-nazarenko-272492283/"
+          target="_blank"
+          ><img
+            src="./img/linkedin_logo.svg"
+            alt="Linkedin logo"
+            width="30"
+            height="30"
+        /></a>
       </div>
-      <div class="grid__item my-flix-server">
-        <h2>MyFlix (Rest API)</h2>
-        <p>It is a server-side component of a “MyFlix” web application provides user an access to information about different movies, directors, and genres. Users are able to sign up, update their personal information, and create a list of their favorite movies</p>
-        <h4>Technologies:</h4>
-        <p>Node.js, Express.js, MongoDB, Postman, Render</p>
-        <a href="https://github.com/nnnzrnk/movie_api.git"  target="_blank" style="color: #fb8500;">Link to the repo</a>
-        <br>
-        <a href="https://movie-api-da5i.onrender.com/documentation.html"  target="_blank" style="color: #fb8500;">Link to the documentation</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="page__footer">
-    <p>Find me on</p>
-    <div class="footer__links">
-      <a href="https://github.com/nnnzrnk" target="_blank"><img src="./img/github_icon.svg" alt="GitHub logo" width="30"
-          height="30"></a>
-      <a href="https://www.instagram.com/nnnzrnko/" target="_blank">
-        <img src="./img/inst.svg" alt="instagram logo" width="30" height="30"></a>
-
-      <a href="https://www.linkedin.com/in/anna-nazarenko-272492283/" target="_blank"><img src="./img/linkedin_logo.svg"
-          alt="Linkedin logo" width="30" height="30"></a>
-    </div>
-  </footer>
-  <script src="./js/tota11y.min.js"></script>
-</body>
-
+    </footer>
+    <script src="./js/tota11y.min.js"></script>
+  </body>
 </html>
