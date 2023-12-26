@@ -345,14 +345,17 @@ button:focus,
     box-shadow: 2px 5px 10px #888888;;
   }
 
+.links {
+  margin: 0 auto;
+  max-width: 90%;
+  margin-bottom: 1rem;
+} 
   .screenshot {
-    max-width: 80%;
+    max-width: 90%;
   }
 
-  .screenshot:hover {
-    opacity: 0.8;
-    transition: all 0.3s ease-in-out;
-    background-color: #3c362a;
+  .screenshot-chats {
+    max-width: 40%;
   }
 
   .grid-link {
@@ -379,7 +382,7 @@ button:focus,
     color: #fefee3;
   }
   .my-flix .screenshot {
-    margin-top: 3rem ;
+    margin-top: 1rem ;
   } 
 
   .pokedex{
@@ -388,17 +391,13 @@ button:focus,
     color: #3564ae;
   }
   .pokedex .screenshot {
-    margin-top: 2rem ;
+    margin-top: 1rem ;
   } 
 
   .chats {
     background: #757083;
     border:none;
     color: #ffffff;
-  }
-  
-  .chats a {
-    text-decoration: none;
   }
 
   .my-flix-angular {
